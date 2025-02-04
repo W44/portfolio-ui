@@ -6,7 +6,6 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
         } transition-transform duration-300 ease-in-out z-20`}
       >
         <button onClick={closeSidebar} className="p-4 text-lg">Close</button>
-        {/* Sidebar content goes here */}
       </div>
     );
   };
