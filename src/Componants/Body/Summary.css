@@ -1,0 +1,41 @@
+/* Summary container - Positioned on the left side */
+.summary-container {
+   
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60%;
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.9); /* Slightly darker for contrast */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  
+  /* Heading */
+  .summary-heading {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* List styling with bullet points */
+  .summary-list {
+    list-style-type: disc; /* Small dots for points */
+    padding-left: 20px; /* Align dots properly */
+  }
+  
+  .summary-list li {
+    font-size: 1.2rem;
+    color: #dddddd;
+    padding: 8px 0;
+  }
+  
+  /* Hover effect - Tilt & Zoom out */
+  .summary-container:hover {
+    transform: scale(0.96) translateY(-50%);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
