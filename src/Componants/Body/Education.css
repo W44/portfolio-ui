@@ -1,0 +1,67 @@
+/* Education Section - Overall Container */
+.education-container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(50, 50, 50, 0.95);
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover Effect - Slight Pop-up */
+.education-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading Styling */
+.education-heading {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Individual Education Item */
+.education-item {
+    background: rgba(70, 70, 70, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+}
+
+/* Hover Effect on Education Items */
+.education-item:hover {
+    background: rgba(90, 90, 90, 0.95);
+}
+
+/* List Styling */
+.education-item ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* List Item Styling */
+.education-item li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+/* Icon Styling */
+.icon {
+    color: #ffcc00;
+    margin-right: 8px;
+}
+
+/* Links Styling */
+.education-item a {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.education-item a:hover {
+    text-decoration: underline;
+}

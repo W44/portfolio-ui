@@ -1,0 +1,91 @@
+.footer {
+    background: #222;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+    min-width: 300px;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.contact-info a {
+    color: #1DA1F2;
+    text-decoration: none;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    background: white;
+    color: black; /* Text appears black when typing */
+    font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #777; /* Slightly dim placeholder text */
+}
+
+.contact-form button {
+    background: #1DA1F2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background: #0d8bd3;
+}
+
+/* Success and Error Messages */
+.success-message {
+    color: #4CAF50; /* Green color */
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: #FF6347; /* Red color */
+    font-size: 1.3rem;
+    margin-top: 20px;
+}

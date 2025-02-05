@@ -39,6 +39,24 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
         >
           💼 Experience
          </button>
+         <button
+          onClick={() => scrollToSection("education")}
+          className="text-lg hover:bg-gray-700 p-2 rounded-md"
+         >
+         🎓 Education
+        </button>
+        <button
+          onClick={() => scrollToSection("projects")}
+          className="text-lg hover:bg-gray-700 p-2 rounded-md"
+        >
+          🚀 Projects
+        </button>
+        <button
+          onClick={() => scrollToSection("contact")}
+          className="text-lg hover:bg-gray-700 p-2 rounded-md"
+        >
+          📬 Contact
+          </button>
       </nav>
     </div>
   );

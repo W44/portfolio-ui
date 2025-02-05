@@ -4,6 +4,8 @@ import Summary from "./Summary";
 import Experience from "./Experience";
 import ExperienceDescription from "./ExperienceDescription";
 import QuickLinks from "./QuickLinks";
+import Education from "./Education";
+import Projects from "./Projects";
 
 const MainContent = () => {
     return (
@@ -22,11 +24,11 @@ const MainContent = () => {
     <br/>
     <Experience/>
     <ExperienceDescription/>
-    
-        <div className="h-[200vh]"> 
-          <p>Work in Progress...</p>
-        </div>
-      </main>
+    <br/>
+    <Education/>
+    <br/>
+    <Projects/>
+    </main>
     );
   };
   
