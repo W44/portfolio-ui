@@ -25,4 +25,39 @@
     object-fit: cover; 
     object-position: top;
   }
+  /* Parent container for Summary and Quick Links */
+.summary-quicklinks-wrapper {
+    display: flex;
+    justify-content: space-between; /* Push both sections apart */
+    align-items: flex-start; /* Align content to the top */
+    width: 90%; /* Adjust width for responsiveness */
+    margin: 50px auto; /* Center the section */
+    gap: 5px; /* Space between components */
+}
+
+
+/* Quick Links container - Takes 40% width */
+.quick-links-container {
+    flex: 2; /* Gives less space (40%) */
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.98);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+/* Ensure responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .summary-quicklinks-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .summary-container,
+    .quick-links-container {
+        width: 90%; /* Make them full width */
+    }
+}
+
   

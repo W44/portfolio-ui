@@ -1,0 +1,18 @@
+.experience-text {
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 10; 
+  }
+  
+  .experience-text:hover {
+    transform: translateX(-5%) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .experience-image {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .experience-text:hover ~ .experience-image {
+    transform: scale(0.95);
+  }
+  

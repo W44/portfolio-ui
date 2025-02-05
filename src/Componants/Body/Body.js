@@ -1,6 +1,9 @@
 import Picture from "./Picture";
 import Description from "./Description";
 import Summary from "./Summary";
+import Experience from "./Experience";
+import ExperienceDescription from "./ExperienceDescription";
+import QuickLinks from "./QuickLinks";
 
 const MainContent = () => {
     return (
@@ -11,9 +14,14 @@ const MainContent = () => {
     <Description/>
     <br/>
     <br/>
+    <div className="summary-quicklinks-wrapper">
     <Summary/>
+    <QuickLinks/>
+    </div>
     <br/>
     <br/>
+    <Experience/>
+    <ExperienceDescription/>
     
         <div className="h-[200vh]"> 
           <p>Work in Progress...</p>

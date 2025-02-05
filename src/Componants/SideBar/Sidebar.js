@@ -33,6 +33,12 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
         >
           📌 Summary
         </button>
+        <button
+          onClick={() => scrollToSection("experience")}
+          className="text-lg hover:bg-gray-700 p-2 rounded-md"
+        >
+          💼 Experience
+         </button>
       </nav>
     </div>
   );

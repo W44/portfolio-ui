@@ -1,0 +1,32 @@
+/* Experience Description - Centered */
+.experience-description-container {
+    width: 80%;  /* Ensure it doesn't take full width */
+    margin: 50px auto; /* Centers it */
+    padding: 20px;
+    background: rgba(60, 60, 60, 0.95); /* Slight transparency */
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added smoother transition */
+    
+    /* Prevent text overflow */
+    overflow: hidden;
+    word-wrap: break-word;
+    max-width: 800px; /* Restrict width to avoid large text shifts */
+    line-height: 1.6;
+}
+
+/* Hover Effect - Smooth Scaling and Box Shadow */
+.experience-description-container:hover {
+    transform: scale(1.05); /* Slightly increased scale for better effect */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* More intense shadow */
+}
+
+/* Prevent text shadow on hover */
+.experience-description-container p {
+    margin: 0;
+    padding: 0;
+    text-shadow: none;  /* Ensuring no text shadow exists */
+}

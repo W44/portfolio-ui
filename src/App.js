@@ -12,9 +12,11 @@ const App = () => {
   return (
     <div className="bg-black min-h-screen">
       <Header toggleSidebar={() => setSidebarOpen(true)} />
+        <div className='body'>
       <ProgressBar />
       <Sidebar isOpen={isSidebarOpen} closeSidebar={() => setSidebarOpen(false)} />
       <MainContent />
+      </div>
       <Footer />
     </div>
   );
