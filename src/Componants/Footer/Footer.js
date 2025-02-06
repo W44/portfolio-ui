@@ -39,23 +39,30 @@ const Footer = () => {
           <p>📍 Kastarikatu 1, Ispuri Building I, 20810 Turku, Finland</p>
           <p>
             📧{" "}
-            <a href="mailto:arslaan_asad@hotmail.com">
-              arslaan_asad@hotmail.com
-            </a>
-          </p>
-          <p>
-            📞 <a href="tel:+358417408350">(+358) 417408350</a>
-          </p>
-          <p>
-            🌐{" "}
             <a
-              href="https://w44.github.io/portfolio-ui/"
-              target="_blank"
-              rel="noopener noreferrer"
+            href="mailto:arslaan_asad@hotmail.com"
+            onClick={(e) => {
+            e.preventDefault();
+            navigator.clipboard.writeText("arslaan_asad@hotmail.com");
+            alert("Email copied to clipboard!");
+            }}
             >
-              Portfolio
+                arslaan_asad@hotmail.com
             </a>
-          </p>
+            </p>
+            <p>
+            📞{" "}
+          <a
+            href="tel:+358417408350"
+            onClick={(e) => {
+            e.preventDefault();
+            navigator.clipboard.writeText("+358417408350");
+            alert("Phone number copied to clipboard!");
+            }}
+            >
+            (+358) 417408350
+         </a>
+         </p>
           <p>
             💼{" "}
             <a
