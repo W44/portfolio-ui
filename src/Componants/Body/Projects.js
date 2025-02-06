@@ -3,20 +3,21 @@ import "./Projects.css";
 
 const projects = [
   {
-    title: "Cryptofi",
+    title: "Cryptofi - Company Project",
     duration: "04/07/2022 – 01/02/2023",
     company: "Strategic Systems International",
     description: [
       "Commercial application providing user access to cryptocurrencies.",
+      "**Backend:** Flask(Python)",
       "Worked with RESTful APIs",
       "Implemented infrastructure as code (AWS)",
       "Built Lambda functions in Flask",
     ],
-    link: "https://www.cryptofi.tech/",
+    link: "https://cu-2.com/fintech/cryptofi/",
   },
   {
-    title: "Intellifi",
-    duration: "02/02/2023 – CURRENT",
+    title: "Intellifi - Company Project",
+    duration: "02/02/2023 – 07/06/2024",
     company: "Strategic Systems International",
     description: [
       "Commercial application catering to workforce management.",

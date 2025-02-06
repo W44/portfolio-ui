@@ -16,6 +16,7 @@ const Education = () => {
           <li>Major: Software Engineering (Agile, DevOps, software design patterns)</li>
           <li>Minor: Cyber Security (network security, threat modeling, cryptography)</li>
           <li><a href="https://www.utu.fi/en" target="_blank" rel="noopener noreferrer">Visit University Website</a></li>
+          <li> <a href={`${process.env.PUBLIC_URL}/utu_transcript.pdf`} target="_blank" rel="noopener noreferrer">Get Transcript</a></li>
         </ul>
       </div>
 

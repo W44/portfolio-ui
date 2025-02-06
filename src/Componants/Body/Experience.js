@@ -21,7 +21,8 @@ const Experience = () => {
         <h2 className="text-3xl font-bold mb-4">Experience</h2>
 
         {/* Experience Details */}
-        <p className="text-sm text-gray-400">04/07/2022 – 07/06/2024 | Lahore, Pakistan</p>
+        <p className="text-sm text-gray-400">04/07/2022 – 07/06/2024 | Lahore, Pakistan - 
+          <a style={{ color: '#ADD8E6' }}  href={`${process.env.PUBLIC_URL}/experience_letter.pdf`} target="_blank" rel="noopener noreferrer"> Get Experience Letter</a></p>
         <h3 className="text-xl font-semibold mt-2">Software Engineer - Strategic Systems International</h3>
 
         {/* Experience Points with Icons */}
