@@ -45,5 +45,19 @@ export const projects = [
         "Utilised and implemented UI/UX concepts and designs",
       ],
       link: "https://www.figma.com/proto/SZGHGqg1oyQQ8c1SdAgpDR/Food-Cart-Final?page-id=0%3A1&node-id=1-332&node-type=frame&viewport=1415%2C1132%2C1.16&t=GCn7aFJo3CHJlZ2q-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A332",
-    }
+    },
+    {
+      title: "Food Sharing Web Application",
+      duration: "00/00/0000 – 00/00/0000",
+      company: "Hobby Project",
+      description: [
+        "Frontend prototype developed using React",
+        "Food sharing application",
+        "Users publish food sharing requests to be fulfilled",
+        "Once fulfilled, the request can be deleted",
+        "Utilized and implemented UI/UX concepts and designs"
+      ],
+      link: "https://github.com/W44/React-FrontEnd-FO",
+}
+
   ];
