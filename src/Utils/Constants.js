@@ -58,6 +58,21 @@ export const projects = [
         "Utilized and implemented UI/UX concepts and designs"
       ],
       link: "https://github.com/W44/React-FrontEnd-FO",
-}
+    },
+    {
+      "title": "Flask Authentication Application",
+      "duration": "00/00/0000 – 00/00/0000",
+      "company": "Hobby Project",
+      "description": [
+        "Backend developed using Flask (Python)",
+        "Provides CRUD functionality",
+        "The main purpose was to explore and understand authentication flows",
+        "Custom authentication implementation",
+        "Implemented JWT-based authentication",
+        "SQLite DB implementation"
+      ],
+      "link": "https://github.com/W44/Flask_CRUD"
+    }
+
 
   ];
