@@ -14,7 +14,7 @@ To set up the application locally, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/W44/portfolio-ui.git
    ```
 2. Navigate to the project directory:
    ```sh
