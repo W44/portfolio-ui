@@ -44,7 +44,7 @@ const Footer = () => {
             onClick={(e) => {
             e.preventDefault();
             navigator.clipboard.writeText("arslaan_asad@hotmail.com");
-            alert("Email copied to clipboard!");
+            alert("Email copied!");
             }}
             >
                 arslaan_asad@hotmail.com
@@ -57,7 +57,7 @@ const Footer = () => {
             onClick={(e) => {
             e.preventDefault();
             navigator.clipboard.writeText("+358417408350");
-            alert("Phone number copied to clipboard!");
+            alert("Phone number copied");
             }}
             >
             (+358) 417408350
