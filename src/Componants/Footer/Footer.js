@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import {ToastContainer, toast } from "react-toastify";
 import "./Footer.css";
+import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -44,7 +46,7 @@ const Footer = () => {
             onClick={(e) => {
             e.preventDefault();
             navigator.clipboard.writeText("arslaan_asad@hotmail.com");
-            alert("Email copied!");
+            toast.success("Email copied!", { autoClose: 2000 });
             }}
             >
                 arslaan_asad@hotmail.com
@@ -57,7 +59,7 @@ const Footer = () => {
             onClick={(e) => {
             e.preventDefault();
             navigator.clipboard.writeText("+358417408350");
-            alert("Phone number copied");
+            toast.success("Phone number copied!", { autoClose: 2000 });
             }}
             >
             (+358) 417408350
@@ -73,6 +75,7 @@ const Footer = () => {
               LinkedIn
             </a>
           </p>
+          <ToastContainer position="top-center" autoClose={2000} />
         </div>
         <div> Developed By Arslaan Asad @2025</div>
         {/* Contact Form or Status Message */}
