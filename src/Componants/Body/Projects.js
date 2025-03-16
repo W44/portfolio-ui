@@ -13,6 +13,16 @@ const Projects = () => {
             <h3 className="project-title">{project.title}</h3>
             <p className="project-duration">{project.duration}</p>
             <p className="project-company">{project.company}</p>
+            {/* Skills Section */}
+            {project?.skills &&
+              <div className="project-skills">
+                {project?.skills.map((skill, i) => (
+                  <span key={i} className="skill-badge">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            }
             <ul className="project-description">
               {project.description.map((point, i) => (
                 <li key={i} dangerouslySetInnerHTML={{ __html: point }}></li>
