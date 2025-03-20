@@ -47,15 +47,6 @@ const Experience = () => {
           <li className="ml-6 text-gray-300">• Working with Angular as a frontend technology</li>
           <li className="ml-6 text-gray-300">• Creation and integration of web pages with backend technology</li>
         </ul>
-
-        {/* Additional Description
-        <p className="mt-6 text-gray-300">
-          As a developer, I have designed and implemented RESTful APIs using Python and the Flask framework, 
-          ensuring seamless communication between services. I worked as a full-stack developer on a microservices 
-          architecture-based application, utilizing Angular 15 for the frontend and .NET for the backend. My role 
-          included optimizing performance by refining database schemas, improving code, and integrating Elasticsearch.
-        </p>
-         */}
       </div>
     </div>
   );
