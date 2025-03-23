@@ -38,7 +38,7 @@ const Footer = () => {
         {/* Contact Information */}
         <div className="contact-info">
           <h3>Contact</h3>
-          <p>📍 Kastarikatu 1, Ispuri Building I, 20810 Turku, Finland</p>
+          <p>📍 Kastarikatu 1, 20810 Turku, Finland</p>
           <p>
             📧{" "}
             <a
