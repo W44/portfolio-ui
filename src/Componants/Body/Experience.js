@@ -3,29 +3,33 @@ import "./Experience.css"
 
 const Experience = () => {
   return (
-    <div className="relative flex items-center justify-center h-screen px-8 py-16">
-      
-      <div className="relative w-1/3 h-full overflow-hidden experience-image">
+    <div className="relative flex flex-col md:flex-row items-center justify-center min-h-screen px-4 py-16 gap-6">
+
+      {/* Image Section - hidden on small screens */}
+      <div className="w-full md:w-1/3 h-64 md:h-full overflow-hidden experience-image hidden md:block">
         <img
-          src={process.env.PUBLIC_URL+"/exp.jpg"}
+          src={process.env.PUBLIC_URL + "/exp.jpg"}
           alt="Experience"
           className="w-full h-full object-cover transition-transform duration-500"
         />
       </div>
 
-      {/* Tilted Partition - Now Positioned Properly */}
-      {/*<div className="absolute left-1/3 top-0 h-full w-1 bg-gray-600"></div>*/}
-
       {/* Text Section */}
-      <div id="experience" className="relative w-2/3 p-10 bg-gray-900 text-white rounded-lg shadow-lg experience-text">
+      <div id="experience" className="w-full md:w-2/3 p-6 md:p-10 bg-gray-900 text-white rounded-lg shadow-lg experience-text">
         <h2 className="text-3xl font-bold mb-4">Experience</h2>
-
-        {/* Experience Details */}
-        <p className="text-sm text-gray-400">04/07/2022 – 07/06/2024 | Lahore, Pakistan - 
-          <a style={{ color: '#ADD8E6' }}  href={`${process.env.PUBLIC_URL}/experience_letter.pdf`} target="_blank" rel="noopener noreferrer"> Get Experience Letter</a></p>
+        <p className="text-sm text-gray-400">
+          04/07/2022 – 07/06/2024 | Lahore, Pakistan -{" "}
+          <a
+            style={{ color: "#ADD8E6" }}
+            href={`${process.env.PUBLIC_URL}/experience_letter.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Experience Letter
+          </a>
+        </p>
         <h3 className="text-xl font-semibold mt-2">Software Engineer - Strategic Systems International</h3>
 
-        {/* Experience Points with Icons */}
         <ul className="mt-4 space-y-2">
           <li className="flex items-center">
             <FaPython className="mr-2 text-yellow-400" /> Backend Developer in Flask - Python
@@ -49,6 +53,7 @@ const Experience = () => {
         </ul>
       </div>
     </div>
+
   );
 };
 

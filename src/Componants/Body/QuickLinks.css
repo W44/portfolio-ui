@@ -1,57 +1,76 @@
-/* Container to hold Summary and Quick Links side by side */
+/* Container for Summary and Quick Links */
 .summary-quicklinks-container {
     display: flex;
+    flex-direction: column; /* Stack vertically by default (mobile) */
     justify-content: space-between;
-    align-items: flex-start; /* Aligns content to the top */
+    align-items: stretch;
     width: 90%;
-    margin: 50px auto; /* Centers the section */
-    gap: 20px; /* Adds spacing between Summary and Quick Links */
-}
-
-/* Summary container - Positioned properly with spacing */
-.summary-container {
-    width: 60%; /* Takes 60% width */
+    margin: 50px auto;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .summary-quicklinks-container {
+      flex-direction: row; /* Side-by-side on medium screens and up */
+      align-items: flex-start;
+    }
+  }
+  
+  /* Summary container */
+  .summary-container {
+    width: 100%;
     padding: 20px;
     background: rgba(55, 55, 55, 0.98);
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
-}
-
-/* Hover effect for Summary */
-.summary-container:hover {
+  }
+  
+  @media (min-width: 768px) {
+    .summary-container {
+      width: 60%;
+    }
+  }
+  
+  .summary-container:hover {
     transform: scale(0.96);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Quick Links container */
-.quick-links-container {
-    width: 35%; /* Takes 35% width */
+  }
+  
+  /* Quick Links container */
+  .quick-links-container {
+    width: 100%;
     padding: 20px;
     background: rgba(40, 40, 40, 0.98);
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
     text-align: center;
-}
-
-/* Quick Links Heading */
-.quick-links-heading {
+  }
+  
+  @media (min-width: 768px) {
+    .quick-links-container {
+      width: 35%;
+    }
+  }
+  
+  /* Quick Links Heading */
+  .quick-links-heading {
     font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 15px;
-}
-
-/* Styling for each link item */
-.quick-links-item {
+  }
+  
+  /* Link items */
+  .quick-links-item {
     font-size: 1.2rem;
     color: #dddddd;
     margin-bottom: 10px;
-}
-
-/* Button styling */
-.quick-link-button {
+  }
+  
+  /* Button styling */
+  .quick-link-button {
     display: block;
     width: 80%;
     padding: 10px;
@@ -63,11 +82,11 @@
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-/* Hover effect for buttons */
-.quick-link-button:hover {
+  }
+  
+  .quick-link-button:hover {
     background: #e55337;
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(255, 99, 71, 0.5);
-}
+  }
+  

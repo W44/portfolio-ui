@@ -26,15 +26,23 @@
     object-position: top;
   }
   /* Parent container for Summary and Quick Links */
-.summary-quicklinks-wrapper {
+  .summary-quicklinks-wrapper {
     display: flex;
-    justify-content: space-between; /* Push both sections apart */
-    align-items: flex-start; /* Align content to the top */
-    width: 90%; /* Adjust width for responsiveness */
-    margin: 50px auto; /* Center the section */
-    gap: 5px; /* Space between components */
-}
-
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: 50px auto;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .summary-quicklinks-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+  
 
 /* Quick Links container - Takes 40% width */
 .quick-links-container {
