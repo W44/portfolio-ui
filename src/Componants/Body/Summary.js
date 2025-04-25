@@ -1,32 +1,49 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Summary.css";
 
 const Summary = () => {
-
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
+  const frame = useRef(null);
+  const containerRef = useRef(null);
 
-  // Function to handle mouse movement
   const handleMouseMove = (e) => {
-    const { clientX, clientY, currentTarget } = e;
-    const { width, height, left, top } = currentTarget.getBoundingClientRect();
+    if (frame.current) cancelAnimationFrame(frame.current);
 
-    // Calculate tilt based on mouse position inside the component
-    const x = ((clientX - left) / width - 0.5) * 20;
-    const y = ((clientY - top) / height - 0.5) * 20;
+    frame.current = requestAnimationFrame(() => {
+      const container = containerRef.current;
+      if (!container) return;
 
-    setTilt({ x, y });
+      const { clientX, clientY } = e;
+      const rect = container.getBoundingClientRect();
+
+      const x = ((clientX - rect.left) / rect.width - 0.5) * 20;
+      const y = ((clientY - rect.top) / rect.height - 0.5) * 20;
+
+      setTilt({ x, y });
+    });
   };
 
-  // Reset tilt effect on mouse leave
-  const handleMouseLeave = () => setTilt({ x: 0, y: 0 });
+  const handleMouseLeave = () => {
+    if (frame.current) cancelAnimationFrame(frame.current);
+    setTilt({ x: 0, y: 0 });
+  };
+
+  useEffect(() => {
+    return () => {
+      if (frame.current) cancelAnimationFrame(frame.current);
+    };
+  }, []);
 
   return (
-    <div id="summary"
+    <div
+      id="summary"
+      ref={containerRef}
       className="summary-container"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{
         transform: `perspective(1000px) rotateX(${tilt.y}deg) rotateY(${tilt.x}deg) scale(0.98)`,
+        willChange: "transform",
       }}
     >
       <h2 className="summary-heading">Summary</h2>
