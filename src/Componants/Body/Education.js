@@ -15,6 +15,7 @@ const Education = () => {
         <ul>
           <li>Major: Software Engineering (Agile, DevOps, software design patterns)</li>
           <li>Minor: Cyber Security (network security, threat modeling, cryptography)</li>
+          <li>Full Merit Scholarship Recipient</li>
           <li><a href="https://www.utu.fi/en" target="_blank" rel="noopener noreferrer">Visit University Website</a></li>
           <li> <a href={`${process.env.PUBLIC_URL}/utu_transcript.pdf`} target="_blank" rel="noopener noreferrer">Get Transcript</a></li>
         </ul>
@@ -25,7 +26,7 @@ const Education = () => {
         <p><strong>NUCES-FAST</strong>, Pakistan (2018 – 2022)</p>
         <ul>
           <li>Designed and developed solutions for complex computing problems</li>
-          <li>Worked on practical projects and assignments</li>
+          <li>Dean’s List (2018, 2019, 2021, 2020, 2022)</li>
           <li>Final Grade: CGPA 3.58 / 4.00</li>
           <li><a href="https://www.nu.edu.pk/" target="_blank" rel="noopener noreferrer">Visit University Website</a></li>
         </ul>
