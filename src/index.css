@@ -4,11 +4,13 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000; /* Match the background color with header */
 }
 
 code {
@@ -17,5 +19,11 @@ code {
 }
 /* Add spacing when scrolling via Sidebar */
 section {
-  scroll-margin-top: 80px; /* Ensures section starts below header */
+  scroll-margin-top: 100px; /* Increased to account for header + progress bar */
+  position: relative; /* Ensure proper stacking context */
+}
+
+/* Main content wrapper */
+#root {
+  padding-top: 70px; /* Move padding to root element instead of body */
 }

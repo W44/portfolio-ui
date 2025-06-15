@@ -3,46 +3,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 50vh;
     margin: 0;
-  }
+    padding-top: 20px;
+    margin-bottom: 20px; /* Add margin at bottom */
+}
   
-  /* Circle styling */
-  .circle {
-    width: 30vw; 
-    height: 30vw; 
+/* Circle styling */
+.circle {
+    width: 35vw;
+    height: 35vw;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    margin-bottom: 20px; /* Add margin at bottom */
+}
   
-  /* Image inside the circle */
-  .image {
+/* Image inside the circle */
+.image {
     width: 100%;
     height: 100%;
     object-fit: cover; 
     object-position: top;
-  }
-  /* Parent container for Summary and Quick Links */
-  .summary-quicklinks-wrapper {
+}
+
+/* Parent container for Summary and Quick Links */
+.summary-quicklinks-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 90%;
     margin: 50px auto;
     gap: 1rem;
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .summary-quicklinks-wrapper {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
     }
-  }
-  
+}
 
 /* Quick Links container - Takes 40% width */
 .quick-links-container {
@@ -67,5 +70,4 @@
         width: 90%; /* Make them full width */
     }
 }
-
   
