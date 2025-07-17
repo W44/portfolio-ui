@@ -15,7 +15,7 @@ const App = () => {
         <div className='body'>
       <ProgressBar />
       <Sidebar isOpen={isSidebarOpen} closeSidebar={() => setSidebarOpen(false)} />
-      <MainCçontent />
+      <MainContent />
       </div>
       <Footer />
     </div>
