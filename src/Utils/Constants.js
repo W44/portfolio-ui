@@ -3,20 +3,21 @@ export const projects = [
   {
     title: "SmartCRM – AI Assisted Outreach Platform (LLM, React, Spring Boot)",
     duration: "15/03/2024 – 30/06/2024",
-    company: "Hobby Project / Demo Available on Request",
+    company: "Demo Available on Request",
     description: [
-      "Built a CRM proof-of-concept that auto-generates personalized letters using donor history and LLM prompts.",
-      "Integrated AI-assisted email campaign workflows with full end-to-end outreach functionality.",
-      "Used Google Send API for direct email delivery and Google Cloud Vision API for image-based translation features.",
-    "Enabled multimodal support and scalable mass email campaign execution.",
+      "CRM demo that generates personalized letters using donor history and LLM prompts.",
+      "Supports AI-powered outreach with integrated email workflows.",
+      "Used Google Send API and Vision API for email delivery and image translation.",
+      "Enabled scalable mass email campaigns with multimodal support.",
     ],
+
     skills: ["LLM", "React", "Spring Boot", "Google Send API", "Cloud Vision API"],
-    link: "",
+    link: "#",
   },
   {
     title: "Food Sharing Web Application",
     duration: "00/00/0000 – 00/00/0000",
-    company: "Hobby Project",
+    company: "",
     description: [
       "A web application that facilitates food sharing among users.",
       "Developed a prototype for a food-sharing application.",
