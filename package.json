@@ -1,7 +1,6 @@
 {
   "name": "portfolio-ui",
   "version": "0.1.0",
-  "homepage": "https://W44.github.io/portfolio-ui",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
