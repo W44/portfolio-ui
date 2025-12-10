@@ -6,7 +6,7 @@
   align-items: stretch;
   width: 90%;
   margin: 50px auto;
-  gap: 20px;
+  gap: 24px;
 }
 
 @media (min-width: 768px) {
@@ -16,14 +16,20 @@
   }
 }
 
-/* Summary container */
+/* Summary container with glassmorphism */
 .summary-container {
   width: 100%;
-  padding: 24px;
-  background: var(--color-bg-card);
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--color-border);
+  padding: 28px;
+
+  /* Stunning glassmorphism effect */
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4),
+    0 0 60px rgba(59, 130, 246, 0.1);
+
+  border-radius: var(--border-radius-xl);
   transition: all var(--transition-base);
 }
 
@@ -34,19 +40,27 @@
 }
 
 .summary-container:hover {
-  box-shadow: var(--shadow-xl);
-  transform: translateY(-4px);
-  border-color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5),
+    0 0 80px rgba(59, 130, 246, 0.2);
+  transform: translateY(-6px);
+  border-color: rgba(59, 130, 246, 0.3);
 }
 
-/* Quick Links container */
+/* Quick Links container with glassmorphism */
 .quick-links-container {
   width: 100%;
-  padding: 24px;
-  background: var(--color-bg-card);
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--color-border);
+  padding: 28px;
+
+  /* Glassmorphism effect */
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4),
+    0 0 60px rgba(59, 130, 246, 0.1);
+
+  border-radius: var(--border-radius-xl);
   text-align: center;
   transition: all var(--transition-base);
 }
@@ -58,16 +72,20 @@
 }
 
 .quick-links-container:hover {
-  box-shadow: var(--shadow-lg);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5),
+    0 0 80px rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.25);
 }
 
 /* Quick Links Heading */
 .quick-links-heading {
   font-family: var(--font-heading);
   font-size: var(--text-2xl);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text-primary);
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
 }
 
 /* Link items */
@@ -75,44 +93,64 @@
   font-family: var(--font-body);
   font-size: var(--text-base);
   color: var(--color-text-secondary);
-  margin-bottom: 8px;
-  margin-top: 16px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
-/* Professional Button styling */
+/* Professional Button styling with enhanced effects */
 .quick-link-button {
   display: block;
   width: 85%;
-  padding: 12px 24px;
-  margin: 12px auto;
-  background: var(--color-primary);
+  padding: 14px 28px;
+  margin: 14px auto;
+
+  /* Gradient button */
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
   color: var(--color-text-primary);
   border: none;
   border-radius: var(--border-radius-md);
   font-family: var(--font-body);
   font-size: var(--text-base);
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all var(--transition-base);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Button shine effect */
+.quick-link-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.quick-link-button:hover::before {
+  left: 100%;
 }
 
 .quick-link-button:hover {
-  background: var(--color-primary-hover);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary));
+  box-shadow: 0 6px 25px rgba(59, 130, 246, 0.5);
+  transform: translateY(-3px) scale(1.02);
 }
 
 .quick-link-button:active {
-  transform: translateY(0);
-  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px) scale(1);
+  box-shadow: 0 3px 12px rgba(59, 130, 246, 0.4);
 }
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .quick-link-button {
     width: 100%;
-    padding: 14px 24px;
+    padding: 16px 32px;
     font-size: var(--text-lg);
   }
 }

@@ -5,18 +5,22 @@ import Sidebar from "./Componants/SideBar/Sidebar";
 import ProgressBar from "./Componants/Header/ProgressBar";
 import MainContent from "./Componants/Body/Body";
 import Footer from "./Componants/Footer/Footer";
+import ScrollProgress from './Componants/ScrollProgress';
 
 const App = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
+  const toggleSidebar = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
+
   return (
-    <div className="bg-black min-h-screen">
-      <Header toggleSidebar={() => setSidebarOpen(true)} />
-        <div className='body'>
+    <div className='App' style={{ backgroundColor: '#0f172a', minHeight: '100vh' }}>
+      <Header toggleSidebar={toggleSidebar} />
+      <ScrollProgress />
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <ProgressBar />
-      <Sidebar isOpen={isSidebarOpen} closeSidebar={() => setSidebarOpen(false)} />
       <MainContent />
-      </div>
       <Footer />
     </div>
   );

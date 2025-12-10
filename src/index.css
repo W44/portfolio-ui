@@ -4,6 +4,9 @@
 /* Import Design System */
 @import './design-system.css';
 
+/* Import Animations */
+@import './animations.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,9 +19,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0f0f0f;
+  /* Solid dark background as fallback to prevent white flash */
+  background-color: #0f172a;
+  /* Stunning animated gradient background */
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #0f1629, #1e1b4b, #1e3a8a);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
   color: #ffffff;
   line-height: 1.6;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Also ensure html has dark background */
+html {
+  background-color: #0f172a;
+}
+
+/* Animated gradient keyframes */
+@keyframes gradientShift {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 code {
@@ -36,6 +64,37 @@ section {
 
 /* Main content wrapper */
 #root {
-  padding-top: 70px;
-  /* Move padding to root element instead of body */
+  padding-top: 80px;
+  /* Reduced from 70px to bring content closer to header */
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+/* Section snap points for smooth scrolling */
+section {
+  scroll-snap-align: start;
+}
+
+/* Accessibility: Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    animation: none;
+  }
 }

@@ -1,0 +1,25 @@
+/* Typewriter text styling */
+.typewriter-text {
+    display: inline-block;
+}
+
+.cursor-blink {
+    display: inline-block;
+    margin-left: 2px;
+    color: var(--color-primary-light);
+    animation: blink 1s infinite;
+    font-weight: 400;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}

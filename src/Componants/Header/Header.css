@@ -1,25 +1,42 @@
+/* Header with Glassmorphism to match animated background */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
-    background: rgba(0, 0, 0, 0.95);
-    backdrop-filter: blur(10px);
-    transition: backdrop-filter 0.3s ease-in-out, background 0.3s ease-in-out;
-    z-index: 9999;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    margin: 0;
-    padding: 0;
+    z-index: 1000;
+
+    /* Glassmorphism effect */
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+
+    padding: 20px;
+    transition: all 0.3s ease;
 }
 
-/* Blurred Header on Scroll */
-.header.scrolled {
-    backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.8);
+/* Optional: make header more transparent when at top of page */
+.header-transparent {
+    background: rgba(15, 23, 42, 0.6);
 }
 
-/* Ensure content starts below header */
-body {
-    padding-top: 70px;
+/* Header text */
+.header h1 {
+    color: white;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Hamburger button */
+.header button {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.header button:hover {
+    color: var(--color-primary-light);
+    transform: scale(1.1);
 }
