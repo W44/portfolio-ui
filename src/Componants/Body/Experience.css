@@ -1,24 +1,32 @@
+/* Experience section styling */
 .experience-text {
-  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: all var(--transition-base);
   z-index: 10;
   width: 100%;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
 }
 
 .experience-text:hover {
-  transform: translateX(0) scale(1.05);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
 }
 
 @media (min-width: 768px) {
   .experience-text:hover {
-    transform: translateX(-5%) scale(1.05);
+    transform: translateY(-4px);
   }
 }
 
 .experience-image {
-  transition: transform 0.5s ease-in-out;
+  transition: all var(--transition-base);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
 }
 
-.experience-text:hover ~ .experience-image {
-  transform: scale(0.95);
+.experience-text:hover~.experience-image {
+  opacity: 0.9;
 }

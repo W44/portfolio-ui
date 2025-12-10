@@ -6,7 +6,7 @@ import { projects } from "../../Utils/Constants";
 const Projects = () => {
   return (
     <div id="projects" className="projects-container">
-      <h2 className="projects-heading">📂 Projects</h2>
+      <h2 className="projects-heading">Projects</h2>
       <div className="projects-list">
         {projects.map((project, index) => (
           <div key={index} className="project-card">

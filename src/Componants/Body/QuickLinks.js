@@ -7,27 +7,27 @@ const QuickLinks = () => {
       <h2 className="quick-links-heading">Quick Links</h2>
 
       <p className="quick-links-item">Visit my LinkedIn</p>
-      <button 
+      <button
         className="quick-link-button"
         onClick={() => window.open('https://www.linkedin.com/in/arslaan-asad-8663101b4/', '_blank')}
       >
-        🌐 Open LinkedIn
+        LinkedIn Profile
       </button>
 
-      <p className="quick-links-item">Visit my Code Repositories</p>
-      <button 
+      <p className="quick-links-item">View my Code Repositories</p>
+      <button
         className="quick-link-button"
         onClick={() => window.open('https://github.com/W44?tab=repositories', '_blank')}
       >
-        💻 Open GitHub
+        GitHub Repositories
       </button>
 
-      <p className="quick-links-item">Get my Resume</p>
-      <button 
+      <p className="quick-links-item">Download my Resume</p>
+      <button
         className="quick-link-button"
-        onClick={() => window.open(process.env.PUBLIC_URL+'/My_Resume.pdf', '_blank')}
+        onClick={() => window.open(process.env.PUBLIC_URL + '/My_Resume.pdf', '_blank')}
       >
-        📄 Open Resume
+        View Resume
       </button>
     </div>
   );

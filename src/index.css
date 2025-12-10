@@ -1,3 +1,9 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Import Design System */
+@import './design-system.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,25 +11,31 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000; /* Match the background color with header */
+  background-color: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 /* Add spacing when scrolling via Sidebar */
 section {
-  scroll-margin-top: 100px; /* Increased to account for header + progress bar */
-  position: relative; /* Ensure proper stacking context */
+  scroll-margin-top: 100px;
+  /* Increased to account for header + progress bar */
+  position: relative;
+  /* Ensure proper stacking context */
 }
 
 /* Main content wrapper */
 #root {
-  padding-top: 70px; /* Move padding to root element instead of body */
+  padding-top: 70px;
+  /* Move padding to root element instead of body */
 }

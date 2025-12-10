@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "./Footer.css";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -38,35 +38,32 @@ const Footer = () => {
         {/* Contact Information */}
         <div className="contact-info">
           <h3>Contact</h3>
-          <p>📍 Kastarikatu 1, 20810 Turku, Finland</p>
+          <p>Kastarikatu 1, 20810 Turku, Finland</p>
           <p>
-            📧{" "}
             <a
-            href="mailto:arslaan_asad@hotmail.com"
-            onClick={(e) => {
-            e.preventDefault();
-            navigator.clipboard.writeText("arslaan_asad@hotmail.com");
-            toast.success("Email copied!", { autoClose: 2000 });
-            }}
+              href="mailto:arslaan_asad@hotmail.com"
+              onClick={(e) => {
+                e.preventDefault();
+                navigator.clipboard.writeText("arslaan_asad@hotmail.com");
+                toast.success("Email copied!", { autoClose: 2000 });
+              }}
             >
-                arslaan_asad@hotmail.com
+              arslaan_asad@hotmail.com
             </a>
-            </p>
-            <p>
-            📞{" "}
-          <a
-            href="tel:+358417408350"
-            onClick={(e) => {
-            e.preventDefault();
-            navigator.clipboard.writeText("+358417408350");
-            toast.success("Phone number copied!", { autoClose: 2000 });
-            }}
-            >
-            (+358) 417408350
-         </a>
-         </p>
+          </p>
           <p>
-            💼{" "}
+            <a
+              href="tel:+358417408350"
+              onClick={(e) => {
+                e.preventDefault();
+                navigator.clipboard.writeText("+358417408350");
+                toast.success("Phone number copied!", { autoClose: 2000 });
+              }}
+            >
+              (+358) 417408350
+            </a>
+          </p>
+          <p>
             <a
               href="https://www.linkedin.com/in/arslaan-asad-8663101b4"
               target="_blank"
@@ -79,7 +76,7 @@ const Footer = () => {
         </div>
         <div> Developed By Arslaan Asad @2025</div>
         {/* Contact Form or Status Message */}
-       {/* 
+        {/* 
         <div className="contact-form">
           {formStatus === "success" ? (
             <h3 className="success-message">✅ Email Sent Successfully!</h3>

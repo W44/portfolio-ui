@@ -1,29 +1,44 @@
 /* Full-width description container */
 .description-container {
-    width: 100%; /* Covers full screen width */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Text styling */
+.description-text {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+  background: var(--color-bg-card);
+  padding: 32px;
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-border);
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+/* Subtle hover effect */
+.description-text:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .description-container {
+    padding: 30px 15px;
   }
-  
-  /* Text styling */
+
   .description-text {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    backdrop-filter: blur(5px);
-    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    font-size: var(--text-base);
+    padding: 24px;
   }
-  
-  /* Subtle hover effect */
-  .description-text:hover {
-    transform: scale(1.02); 
-    opacity: 0.95; /* Slight fade */
-  }
+}
