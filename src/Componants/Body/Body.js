@@ -27,21 +27,30 @@ const MainContent = () => {
           <h2 className="text-xl mt-2 flex justify-center items-center">Software Engineer <span className="text-gray-400"> {/*(Fullstack Developer)*/}</span></h2>
         </div>
       </div>
-      <div ref={descriptionRef} className="fade-in-section">
+
+      <div ref={descriptionRef} className="fade-in-section section-slide-up">
         <Description />
       </div>
-      <div ref={summaryRef} className="summary-quicklinks-wrapper fade-in-section">
+      <div className="section-divider" ref={useScrollAnimation()}></div>
+
+      <div ref={summaryRef} className="summary-quicklinks-wrapper fade-in-section section-scale-in">
         <Summary />
         <QuickLinks />
       </div>
-      <div ref={experienceRef} className="fade-in-section">
+      <div className="section-divider" ref={useScrollAnimation()}></div>
+
+      <div ref={experienceRef} className="fade-in-section section-slide-left">
         <Experience />
       </div>
       <ExperienceDescription />
-      <div ref={educationRef} className="fade-in-section">
+      <div className="section-divider" ref={useScrollAnimation()}></div>
+
+      <div ref={educationRef} className="fade-in-section section-slide-right">
         <Education />
       </div>
-      <div ref={projectsRef} className="fade-in-section">
+      <div className="section-divider" ref={useScrollAnimation()}></div>
+
+      <div ref={projectsRef} className="fade-in-section section-slide-up">
         <Projects />
       </div>
     </main>

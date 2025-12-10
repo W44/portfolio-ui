@@ -11,7 +11,6 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div key={index} className="project-card">
             <h3 className="project-title">{project.title}</h3>
-            <p className="project-duration">{project.duration}</p>
             <p className="project-company">{project.company}</p>
             {/* Skills Section */}
             {project?.skills &&

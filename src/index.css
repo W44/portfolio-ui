@@ -24,7 +24,7 @@ body {
   /* Stunning animated gradient background */
   background: linear-gradient(-45deg, #0f172a, #1e293b, #0f1629, #1e1b4b, #1e3a8a);
   background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
+  animation: gradientShift 60s ease infinite;
   color: #ffffff;
   line-height: 1.6;
   position: relative;

@@ -24,13 +24,13 @@
     }
 }
 
-/* Professional hover effect with glow */
-.summary-container:hover {
+/* Enhanced hover effect */
+.summary-card:hover {
     background: rgba(255, 255, 255, 0.08);
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5),
-        0 0 80px rgba(59, 130, 246, 0.2);
-    transform: translateY(-6px);
-    border-color: rgba(59, 130, 246, 0.3);
+        0 0 30px rgba(59, 130, 246, 0.25);
+    transform: translateY(-6px) scale(1.02);
+    border-color: rgba(59, 130, 246, 0.4);
 }
 
 /* Summary heading */
