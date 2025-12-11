@@ -21,10 +21,10 @@ const MainContent = () => {
       <div className="flex flex-col items-center">
         <Picture imageSrc={"/IMG_1315.jpg"} />
         <div className="mt-12">
-          <h1 className="text-3xl font-bold flex justify-center items-center">
-            <TypewriterText text="Arslaan Asad" delay={120} className="typewriter-text" />
+          <h1 className="text-6xl font-bold flex justify-center items-center" style={{ letterSpacing: '-0.02em', textShadow: '0 4px 20px rgba(212, 175, 55, 0.3)' }}>
+            <TypewriterText text="Arslaan Asad" delay={100} className="typewriter-text" />
           </h1>
-          <h2 className="text-xl mt-2 flex justify-center items-center">Software Engineer <span className="text-gray-400"> {/*(Fullstack Developer)*/}</span></h2>
+          <h2 className="text-2xl mt-4 flex justify-center items-center" style={{ color: '#E5E5E5' }}>Software Engineer <span className="text-gray-400"> {/*(Fullstack Developer)*/}</span></h2>
         </div>
       </div>
 
