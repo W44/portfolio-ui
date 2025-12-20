@@ -19,22 +19,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* Deep sophisticated background */
-  background-color: #0a0e27;
-  /* Premium deep navy gradient with gold undertones */
-  background: linear-gradient(-45deg, #0a0e27, #0f1419, #1a1d2e, #14161f, #0a0e27);
+  /* Solid dark background as fallback to prevent white flash */
+  background-color: #0f172a;
+  /* Stunning animated gradient background */
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #0f1629, #1e1b4b, #1e3a8a);
   background-size: 400% 400%;
-  animation: gradientShift 60s ease infinite;
+  animation: gradientShift 15s ease infinite;
   color: #ffffff;
-  line-height: 1.8;
-  /* Premium comfortable reading */
+  line-height: 1.6;
   position: relative;
   min-height: 100vh;
 }
 
-/* Also ensure html has deep navy background */
+/* Also ensure html has dark background */
 html {
-  background-color: #0a0e27;
+  background-color: #0f172a;
 }
 
 /* Animated gradient keyframes */

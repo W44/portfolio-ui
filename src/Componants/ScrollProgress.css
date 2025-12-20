@@ -18,8 +18,8 @@
             var(--color-primary-light),
             var(--color-accent));
     transition: width 0.1s ease-out;
-    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5),
-        0 0 20px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5),
+        0 0 20px rgba(212, 175, 55, 0.3);
 }
 
 /* Pulsing glow effect */
@@ -27,12 +27,12 @@
 
     0%,
     100% {
-        box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+        box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
     }
 
     50% {
-        box-shadow: 0 0 20px rgba(59, 130, 246, 0.8),
-            0 0 30px rgba(59, 130, 246, 0.4);
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.8),
+            0 0 30px rgba(212, 175, 55, 0.4);
     }
 }
 

@@ -52,6 +52,13 @@
 
 .circle:hover::before {
     opacity: 1;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .circle:hover {

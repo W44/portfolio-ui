@@ -21,9 +21,9 @@
 .education-container:hover {
     background: rgba(255, 255, 255, 0.07);
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5),
-        0 0 60px rgba(59, 130, 246, 0.15);
+        0 0 60px rgba(212, 175, 55, 0.15);
     transform: translateY(-6px);
-    border-color: rgba(59, 130, 246, 0.3);
+    border-color: rgba(212, 175, 55, 0.3);
 }
 
 /* Heading Styling */
@@ -55,7 +55,7 @@
 /* Hover Effect on Education Items */
 .education-item:hover {
     background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(59, 130, 246, 0.3);
+    border-color: rgba(212, 175, 55, 0.3);
     transform: translateX(10px) scale(1.02);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
@@ -79,7 +79,7 @@
 .icon {
     color: var(--color-primary-light);
     margin-right: 10px;
-    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.4));
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
 }
 
 /* Links Styling */
@@ -108,7 +108,7 @@
 
 .education-item a:hover {
     color: var(--color-primary);
-    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
 }
 
 /* Mobile responsiveness */
